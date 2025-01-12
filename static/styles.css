@@ -1,0 +1,156 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #0d1b2a; /* Background warna gelap */
+  color: #e0e1dd; /* Teks warna terang */
+}
+
+h1 {
+  text-align: center;
+  color: #f0f4ef;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 20px;
+}
+
+/* Ornamental Line under Header */
+h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #4caf50;
+  margin: 10px auto 0;
+}
+
+/* Form Styling */
+form {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #1b263b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #415a77;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #e0e1dd;
+  background-color: #1e2d44;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px; /* Added margin for spacing */
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3a923c;
+}
+
+/* Container Styling */
+.container {
+  background-color: #1b263b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #1b263b;
+  color: #e0e1dd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  border: 1px solid #415a77;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #415a77;
+  color: #ffffff;
+}
+
+td {
+  background-color: #1e2d44;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3a923c;
+}
+
+/* Preformatted Text Styling (view_pdf.html) */
+.preformatted-text {
+  background-color: #1e2d44;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  color: #e0e1dd;
+  margin-top: 20px;
+}
+
+/* Button Container */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Button Styling for Download */
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+a.btn:hover {
+  background-color: #3a923c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* No Results Message */
+p {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 20px;
+  color: #f0f4ef;
+}

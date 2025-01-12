@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View PDF Content</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Content</h1>
+
+        <div class="pdf-content">
+            <h2>Content of the PDF:</h2>
+            <div class="preformatted-text">
+                {% if content %}
+                {{ content | safe }}
+                {% else %}
+                <p>No content available.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="button-container">
+            <!-- Tombol Download PDF -->
+            <a href="{{ url_for('download_pdf', filename=filename) }}" class="btn" download>
+                Download PDF
+            </a>
+        </div>
+    </div>
+</body>
+</html>
